@@ -1,0 +1,27 @@
+.wrapper {
+    display: flex;
+}
+
+.sidebar {
+    background-color: rgb(138, 114, 86);
+    color: bisque;
+    padding: 15px;
+    width: 20%;
+    float: left;
+}
+
+.sidebar img {
+    border-radius: 50%;
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.main {
+    background-color: rgb(255, 239, 226);
+    width: 80%;
+    padding: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
