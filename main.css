@@ -9,7 +9,7 @@ body {
 .wrapper {
     display: flex;
     background-color: whitesmoke;
-    margin: 5em;
+    margin: 2em;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
