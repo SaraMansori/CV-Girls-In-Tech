@@ -1,27 +1,65 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
 .wrapper {
     display: flex;
+    background-color: whitesmoke;
+    padding: 5em;
+    border-color: black;
 }
 
 .sidebar {
     background-color: rgb(138, 114, 86);
     color: bisque;
-    padding: 15px;
-    width: 20%;
-    float: left;
+    padding: 20px;
+    width: 13%;
 }
 
-.sidebar img {
+.sidebar h1 {
+    text-align: center;
+}
+
+.sidebar h2 {
+    text-align: left;
+    margin-left: 20px;
+    color: whitesmoke;
+}
+
+.profile-picture {
     border-radius: 50%;
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
 
-.main {
-    background-color: rgb(255, 239, 226);
-    width: 80%;
-    padding: 15px;
+li {
+    font-size: 1em;
+    margin-top: 0.5em;
 }
 
 ul {
     list-style-type: none;
+    padding-left: 0;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+.main {
+    width: 85%;
+    padding: 15px;
+    margin-top: 115px;
+}
+
+.main .section {
+    margin-left: 2em;
+    margin-bottom: 3em;
+}
+
+.bx-ul {
+    margin-left: 4em;
 }
