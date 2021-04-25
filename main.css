@@ -2,11 +2,16 @@
     font-family: "Roboto", sans-serif;
 }
 
+body {
+    background-color: rgb(231, 213, 195);
+}
+
 .wrapper {
     display: flex;
     background-color: whitesmoke;
-    padding: 5em;
-    border-color: black;
+    margin: 5em;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .sidebar {
@@ -14,6 +19,7 @@
     color: bisque;
     padding: 20px;
     width: 13%;
+    border-radius: 15px 0px 0px 15px;
 }
 
 .sidebar h1 {
@@ -49,10 +55,23 @@ ul {
     padding: 10px;
 }
 
+.bx-ul {
+    margin-left: 4em;
+}
+
+a {
+    color: bisque;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
 .main {
     width: 85%;
     padding: 15px;
-    margin-top: 115px;
+    margin-top: 5%;
 }
 
 .main .section {
@@ -60,6 +79,17 @@ ul {
     margin-bottom: 3em;
 }
 
-.bx-ul {
-    margin-left: 4em;
+h2 {
+    color: rgb(138, 114, 86);
+}
+
+h3 {
+    margin-block-end: 0em;
+    color: rgb(189, 154, 112);
+}
+
+.date {
+    font-style: italic;
+    font-size: small;
+    color: rgb(138, 114, 86);
 }
