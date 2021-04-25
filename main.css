@@ -8,8 +8,9 @@ body {
 
 .wrapper {
     display: flex;
+    flex-wrap: nowrap;
     background-color: whitesmoke;
-    margin: 2em;
+    margin: 2%;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -18,18 +19,21 @@ body {
     background-color: rgb(138, 114, 86);
     color: bisque;
     padding: 20px;
-    width: 13%;
+    flex: 1 1 10vw;
+    min-width: 20ch;
     border-radius: 15px 0px 0px 15px;
 }
 
 .sidebar h1 {
     text-align: center;
+    font-size: 2vw;
 }
 
 .sidebar h2 {
     text-align: left;
     margin-left: 20px;
     color: whitesmoke;
+    font-size: 1.25vw;
 }
 
 .profile-picture {
@@ -43,7 +47,7 @@ body {
 }
 
 li {
-    font-size: 1em;
+    font-size: 0.9vw;
     margin-top: 0.5em;
 }
 
@@ -69,9 +73,9 @@ a:hover {
 }
 
 .main {
-    width: 85%;
+    flex: 1 1 70vw;
     padding: 15px;
-    margin-top: 5%;
+    margin: 1vw;
 }
 
 .main .section {
@@ -92,4 +96,10 @@ h3 {
     font-style: italic;
     font-size: small;
     color: rgb(138, 114, 86);
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        color: red !important;
+    }
 }
