@@ -60,7 +60,7 @@ ul {
 }
 
 .bx-ul {
-    margin-left: 4em;
+    margin-left: 3vw;
 }
 
 a {
@@ -99,7 +99,39 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
-    * {
-        color: red !important;
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sidebar {
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .sidebar h1 {
+        font-size: 7vw;
+    }
+
+    .sidebar-info {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sidebar h2 {
+        margin: unset;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    ul {
+        width: 85%;
+    }
+
+    ul .bx-ul {
+        margin-left: 1em;
+    }
+
+    li {
+        font-size: 2vw;
     }
 }
