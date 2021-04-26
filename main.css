@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: rgb(231, 213, 195);
+    background-color: rgb(231, 213, 195) !important;
 }
 
 .wrapper {
@@ -26,8 +26,9 @@ body {
 
 .sidebar h1 {
     text-align: center;
-    font-size: 5ch;
+    font-size: 3vw;
     margin-bottom: 0.5em;
+    font-weight: bold;
 }
 
 .sidebar h2 {
@@ -55,10 +56,10 @@ li {
 
 ul {
     list-style-type: none;
-    padding-left: 0;
     margin: auto;
     width: 70%;
     padding: 10px;
+    padding-left: 0 !important;
 }
 
 .bx-ul {
@@ -69,12 +70,12 @@ ul {
     margin-left: 1.55em;
 }
 
-a {
+.email {
     color: bisque;
     text-decoration: none;
 }
 
-a:hover {
+.email:hover {
     font-weight: bold;
 }
 
@@ -104,10 +105,6 @@ h3 {
     color: rgb(138, 114, 86);
 }
 
-.all-button {
-    width: fit-content;
-}
-
 .all-button > * {
     color: rgb(138, 114, 86);
     border: 1px solid rgb(138, 114, 86);
@@ -115,14 +112,23 @@ h3 {
 }
 
 .all-button:hover > * {
-    color: rgb(231, 213, 195);
+    color: whitesmoke;
     background-color: rgb(138, 114, 86);
     border: 1px solid rgb(138, 114, 86);
     transition: 0.3s;
 }
 
-.bx bx-download:hover {
+.all-button {
+    width: max-content;
+}
+
+.button-.button-cv:hover {
     color: rgb(231, 213, 195);
+}
+
+button {
+    border: 0;
+    background-color: transparent;
 }
 
 @media screen and (max-width: 600px) {
@@ -141,25 +147,32 @@ h3 {
 
     .sidebar-info {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .sidebar h2 {
-        margin: unset;
-        font-size: 3vw;
         text-align: center;
+        font-size: 5vw;
+        font-weight: bold;
+        margin-left: 0;
     }
 
     ul {
-        width: 85%;
+        width: 100%;
+        margin-bottom: 0rem !important;
+    }
+
+    .bx-ul {
+        margin-left: 1.5em !important;
     }
 
     ul .bx-ul {
-        margin-left: 1em;
+        margin-left: 1em !important;
     }
 
     li {
-        font-size: 2vw;
+        font-size: 3vw;
+        margin-left: 3vw;
     }
 
     .icon-list {
@@ -170,13 +183,22 @@ h3 {
         color: rgb(138, 114, 86);
         border: 1px solid rgb(138, 114, 86);
         padding: 0.5em;
-        margin-left: 5em;
     }
 
     .all-button:hover > * {
-        color: rgb(231, 213, 195);
+        color: whitesmoke;
         border: 1px solid rgb(138, 114, 86);
         background-color: rgb(138, 114, 86);
         transition: 0.3s;
+    }
+
+    .all-button {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .languages {
+        display: flex;
+        justify-content: flex-end;
     }
 }

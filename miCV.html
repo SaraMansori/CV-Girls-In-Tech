@@ -36,6 +36,10 @@
             href="./favicon_io/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+        />
     </head>
     <body>
         <div class="wrapper">
@@ -46,6 +50,7 @@
                         src="https://64.media.tumblr.com/7d376efd024eadd902a8bb60c8155c94/tumblr_o51oavbMDx1ugpbmuo4_540.png"
                         alt="Foto de perfil"
                     />
+                    <br />
                     <h1 class="name">Hannah Edwards</h1>
                 </div>
                 <div class="sidebar-info">
@@ -71,7 +76,10 @@
                                     class="bx bx-mail-send"
                                     style="color: whitesmoke"
                                 ></i>
-                                <a href="mailto" :sara.mansori.amar@gmail.com
+                                <a
+                                    class="email"
+                                    href="mailto"
+                                    :sara.mansori.amar@gmail.com
                                     >Email</a
                                 >
                             </li>
@@ -130,10 +138,19 @@
             </div>
 
             <div class="main">
+                <div class="languages">
+                    <button class="btn-lang" onclick="changeLanguage('es')">
+                        <i class="flag flag-spain"></i>
+                    </button>
+                    <button class="btn-lang" onclick="changeLanguage('eng')">
+                        <i class="flag flag-united-kingdom"></i>
+                    </button>
+                </div>
+                <br />
                 <div class="section">
                     <h2>Perfil</h2>
-                    <div class="subsection">
-                        <p>Hello World!</p>
+                    <div class="subsection" id="siteContent">
+                        <p>Hola Mundo!</p>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. <strong>Quisque iaculis,</strong> ligula
@@ -152,14 +169,11 @@
                     <div class="all-button">
                         <a
                             href="./Mi CV.pdf"
-                            class="button"
+                            class="button-cv"
                             target="_blank"
                             download
                         >
-                            <i
-                                class="bx bx-download"
-                                style="color: rgb(138, 114, 86)"
-                            ></i>
+                            <i class="bx bx-download"></i>
                             Descargar CV
                         </a>
                     </div>
@@ -204,5 +218,28 @@
                 </div>
             </div>
         </div>
+        <script>
+            function changeLanguage(lang) {
+                location.hash = lang;
+                location.reload();
+            }
+
+            let language = {
+                eng: {
+                    welcome: "Welcome to my Online CV!",
+                },
+                es: {
+                    welcome: "¡Bienvenido a mi CV Online!",
+                },
+            };
+
+            if (window.location.hash) {
+                if (window.location.hash === "#es") {
+                    siteContent.textContent = language.es.welcome;
+                } else if (window.location.hash === "#eng") {
+                    siteContent.textContent = language.eng.welcome;
+                }
+            }
+        </script>
     </body>
 </html>
