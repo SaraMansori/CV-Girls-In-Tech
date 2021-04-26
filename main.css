@@ -27,6 +27,7 @@ body {
 .sidebar h1 {
     text-align: center;
     font-size: 2vw;
+    margin-bottom: 0.5em;
 }
 
 .sidebar h2 {
@@ -34,6 +35,7 @@ body {
     margin-left: 20px;
     color: whitesmoke;
     font-size: 1.25vw;
+    margin-bottom: 0;
 }
 
 .profile-picture {
@@ -61,6 +63,10 @@ ul {
 
 .bx-ul {
     margin-left: 3vw;
+}
+
+.icon-list {
+    margin-left: 1.55em;
 }
 
 a {
@@ -133,5 +139,9 @@ h3 {
 
     li {
         font-size: 2vw;
+    }
+
+    .icon-list {
+        margin-left: -0.5em;
     }
 }
